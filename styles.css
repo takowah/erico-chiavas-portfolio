@@ -4,7 +4,7 @@
   - decka: serif display statement, personal voice
   - hololive: wide-tracked titles + JP subtitle, triangle/▶ motif, pill buttons, TO TOP
   - theKOLLAB: hard offset shadows, section rule lines
-  Palette: monochrome only — black, white, greys.
+  Palette: monochrome only: black, white, greys.
 */
 :root {
   --black: #0b0b0f;
@@ -58,7 +58,7 @@ a { color: inherit; text-decoration: none; }
 .hero h1 em { font-style: italic; color: var(--mute); }
 .hero .lead { color: var(--mute); font-size: 18px; max-width: 560px; margin: 28px 0 36px; }
 .status { border: 1px solid var(--line); border-radius: 18px; padding: 8px 24px; background: var(--panel); }
-.status .avatar { /* TODO: ganti dengan foto asli */ height: 180px; margin: 16px 0; border-radius: 12px; background: var(--panel-2) var(--tri); border: 1px dashed var(--line-strong); display: grid; place-items: center; color: var(--mute); font: 600 12px "JetBrains Mono", monospace; letter-spacing: .08em; }
+.status .avatar { display: block; width: 100%; height: 260px; margin: 16px 0; border-radius: 12px; border: 1px solid var(--line-strong); object-fit: cover; object-position: 50% 42%; }
 .kv { display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
 .kv:last-child { border-bottom: 0; }
 .kv span { color: var(--mute); font: 12px "JetBrains Mono", monospace; text-transform: uppercase; letter-spacing: .08em; }
@@ -74,7 +74,7 @@ a { color: inherit; text-decoration: none; }
 @media (prefers-reduced-motion: reduce) { .marquee-track, .live::before { animation: none; } }
 
 /* ---------- giant wordmark (sleepy) ---------- */
-.wordmark { font: 700 clamp(64px, 17vw, 230px)/.85 "Outfit", sans-serif; letter-spacing: -.04em; text-align: center; padding: 48px 0 24px; overflow: hidden; }
+.wordmark { font: 700 clamp(44px, 13vw, 200px)/.85 "Outfit", sans-serif; letter-spacing: -.04em; text-align: center; padding: 48px 0 24px; overflow: hidden; }
 .wordmark span { color: var(--mute); }
 
 /* ---------- section title (hololive) ---------- */
