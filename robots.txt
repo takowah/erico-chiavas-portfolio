@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /$
+Allow: /styles.css
+Allow: /erico.jpg
+Disallow: /*?
+
+Sitemap: https://takofox.com/sitemap.xml
