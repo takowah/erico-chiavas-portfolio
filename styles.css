@@ -1,6 +1,6 @@
 /*
   Mix:
-  - sleepyreinze: black base, 3-col header, key/value status rows, skill marquee, giant wordmark
+  - sleepyreinze: black base, 3-col header, key/value status rows, skill marquee
   - decka: serif display statement, personal voice
   - hololive: wide-tracked titles + JP subtitle, triangle/▶ motif, pill buttons, TO TOP
   - theKOLLAB: hard offset shadows, section rule lines
@@ -73,9 +73,6 @@ a { color: inherit; text-decoration: none; }
 @keyframes slide { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .marquee-track, .live::before { animation: none; } }
 
-/* ---------- giant wordmark (sleepy) ---------- */
-.wordmark { font: 700 clamp(44px, 13vw, 200px)/.85 "Outfit", sans-serif; letter-spacing: -.04em; text-align: center; padding: 48px 0 24px; overflow: hidden; }
-.wordmark span { color: var(--mute); }
 
 /* ---------- section title (hololive) ---------- */
 .band { padding: 96px 0; position: relative; border-top: 1px solid var(--line); }
