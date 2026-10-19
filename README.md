@@ -7,4 +7,4 @@ Single-page static site (plain HTML + CSS, no build step).
 
 Preview locally: open `index.html`, or serve the folder with any static server.
 
-Status: work in progress. Live on GitHub Pages.
+Live at https://takofox.com (GitHub Pages, DNS on Cloudflare).
