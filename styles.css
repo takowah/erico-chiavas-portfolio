@@ -128,6 +128,10 @@ a { color: inherit; text-decoration: none; }
 .exp .item { grid-template-columns: 200px 1fr; }
 
 /* ---------- contact ---------- */
+.about { max-width: 760px; }
+.about p { color: var(--mute); font-size: 18px; margin: 0 0 18px; }
+.about p.serif { color: inherit; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; margin-bottom: 28px; }
+
 .contact { text-align: center; }
 .contact .serif { font-size: clamp(44px, 7vw, 88px); line-height: 1; }
 .contact p { margin: 20px 0 36px; color: var(--mute); }
