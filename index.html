@@ -13,14 +13,14 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body id="top">
 
   <header class="nav wrap">
     <a href="#top" class="mark" aria-label="Erico Chiavas, back to top">ec<i>.</i></a>
     <nav>
-      <a href="#work">Work</a><a href="#screens">Screens</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a href="#work">Projects</a><a href="#about">About</a><a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -45,9 +45,9 @@
       <hr>
     </section>
 
-    <!-- ============ WORK ============ -->
+    <!-- ============ PROJECTS I BUILT (details/summary = dropdown without JS) ============ -->
     <section id="work" class="wrap block">
-      <h2 class="label mono">Work</h2>
+      <h2 class="label mono">Projects I built</h2>
 
       <article class="feature">
         <a class="feature-img" href="https://github.com/takowah/fubunotch-v2" target="_blank" rel="noopener"><img src="img/work/fubunotch.webp" width="810" height="320" alt="FubuNotch home view: a dark capsule with a pixel fox mascot, the time and tabs for music, notifications, focus, water, to-do and shelf"></a>
@@ -59,45 +59,149 @@
         </div>
       </article>
 
-      <p class="note rows-note">The first six tools below shipped as merge requests into the company's web app (Go and TypeScript), written by me with AI-assisted coding, then reviewed and deployed by our dev.</p>
-      <ul class="rows">
-        <li><h3>Partner Ops System</h3><span class="tag mono">Partnerships</span><p>Runs 23 paid fan pages end to end: post quotas, auto-intake, pending-invite chaser, story proof, payouts and cost-per-post reporting. Our dev shipped the first version, I built the rest.</p></li>
-        <li><h3>Meta Ad Launcher</h3><span class="tag mono">Paid social</span><p>Builds Meta campaigns from a form inside our internal dashboard. Names fill in automatically, the WhatsApp button is wired in, and campaigns land paused for a human check.</p></li>
-        <li><h3>Product Demand Signal</h3><span class="tag mono">Paid social · Data</span><p>Flags products selling fast enough to deserve an ad: rolling 30-day sales against thresholds per product line and price band, set from a year of pre-order data.</p></li>
-        <li><h3>KOL Scoring Engine</h3><span class="tag mono">Creators</span><p>Creator scoring rebuilt around cost per view and CPM, with a leaderboard and claims tracking. Our dev built the scraper, I designed the scoring.</p></li>
-        <li><h3>Creator KPI &amp; Scoring</h3><span class="tag mono">Creators · Analytics</span><p>One engagement-weighted score across Instagram, Facebook and YouTube, a floor and target per creator, a content-debt counter and a list of posts worth boosting.</p></li>
-        <li><h3>VTuber Collab Desk</h3><span class="tag mono">Creators</span><p>Proposals approved before any deal, every stream logged with its cost and results, a verdict per stream and a monthly cap that needs sign-off.</p></li>
-        <li><h3>Backlog &amp; Daily Log Bot</h3><span class="tag mono">Discord</span><p>Log tasks by slash command or plain chat, get a daily report by DM, synced with Google Calendar. Google Sheets as the database.</p></li>
-        <li><h3>Marketing Report Bot</h3><span class="tag mono">Discord</span><p>Drop a monthly Facebook or Instagram CSV into Discord and get a formatted Sheets report with month-over-month rollups, plus ads and live-stream digests.</p></li>
-        <li><h3>Video Analysis Pipeline</h3><span class="tag mono">Python</span><p>Turns raw short-form videos into AI-ready review packs: a frame every second, a Whisper transcript and on-screen text.</p></li>
-      </ul>
-    </section>
+      <div class="projects">
 
-    <!-- ============ SCREENS (mockups & replicas, sensitive data blurred) ============ -->
-    <section id="screens" class="wrap block">
-      <h2 class="label mono">Screens</h2>
-      <p class="note">From the clickable mockups and working sheets I hand to our dev, translated to English. Numbers, people and the company name are scrambled and blurred.</p>
-      <div class="shots">
-        <figure>
-          <a href="img/work/sns-monthly-review.webp" target="_blank" rel="noopener"><img src="img/work/sns-monthly-review.webp" width="1440" height="1109" loading="lazy" alt="Monthly social media review: account metrics month over month and post summary cards, numbers blurred"></a>
-          <figcaption><b>Social performance review</b>Account and post metrics month over month. In build.</figcaption>
-        </figure>
-        <figure>
-          <a href="img/work/sns-ip-trends.webp" target="_blank" rel="noopener"><img src="img/work/sns-ip-trends.webp" width="1440" height="1109" loading="lazy" alt="Anime series trends: social attention per series with sales rank overlaid, numbers blurred"></a>
-          <figcaption><b>Series trends vs sales</b>Shows which series get attention on social but don't sell.</figcaption>
-        </figure>
-        <figure>
-          <a href="img/work/account-growth.webp" target="_blank" rel="noopener"><img src="img/work/account-growth.webp" width="1440" height="1060" loading="lazy" alt="Weekly account growth: follows vs unfollows, reach, views and posts per week, numbers blurred"></a>
-          <figcaption><b>Account growth, weekly</b>Follows against unfollows, reach and output per creator.</figcaption>
-        </figure>
-        <figure>
-          <a href="img/work/creator-kpi-sheet.webp" target="_blank" rel="noopener"><img src="img/work/creator-kpi-sheet.webp" width="1260" height="924" loading="lazy" alt="Creator KPI sheet: per-creator and team KPIs with floor and target, numbers blurred"></a>
-          <figcaption><b>Creator KPI draft</b>Floors from the live baseline, targets from the last healthy quarter.</figcaption>
-        </figure>
-        <figure>
-          <a href="img/work/creator-side-quest.webp" target="_blank" rel="noopener"><img src="img/work/creator-side-quest.webp" width="1368" height="774" loading="lazy" alt="Weekly side quest for content creators: assigned reference, submission steps and review notes, names blurred"></a>
-          <figcaption><b>Creator side quest</b>One assigned reference a week to get creators out of their comfort zone.</figcaption>
-        </figure>
+        <details class="proj">
+          <summary><h3>Partner Ops System</h3><span class="tag mono">Partnerships</span><p>Runs 23 paid fan pages end to end, from partner CRM to payouts and cost-per-post reporting.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Built in the company web app (Go + TypeScript). Our dev shipped the first version, I built the rest.</p>
+            <ul class="inside">
+              <li><b>Partner database</b>Pipeline status, contract benefits, collab quota and a "days without a post" alarm.</li>
+              <li><b>Link intake</b>Posts flow in from the publishing tool; approve the collaborators per post and quota slots deduct on their own.</li>
+              <li><b>Delivery calendar</b>Posts per partner per day, with a flag for active partners nobody is tracking.</li>
+              <li><b>Pending invites</b>Collab invites not accepted yet, with a copy-paste WhatsApp reminder.</li>
+              <li><b>Daily stories</b>Paste screenshot proof, partners rotated in groups for checking.</li>
+              <li><b>Payments</b>Monthly payout from the contract, one proof upload for a batch of transfers.</li>
+              <li><b>Period report</b>Spend, collabs, cost per post, idle partner-days, month over month, partners in and out.</li>
+              <li><b>Creator presets</b>A cross-post message that picks pages matching the creator's content type.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="proj">
+          <summary><h3>Meta Ad Launcher</h3><span class="tag mono">Paid social</span><p>Builds Meta campaigns from a form inside our internal dashboard, ready for a human check.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Built by me in the company web app (Go + TypeScript) on the Meta Marketing API.</p>
+            <ul class="inside">
+              <li><b>Objective picker</b>Catalog sales, traffic, awareness or leads.</li>
+              <li><b>One form, whole campaign</b>Visuals and copy go in once; campaign, ad sets and ads come out together.</li>
+              <li><b>Naming on rails</b>Campaign names follow the team's naming scheme, so reporting never loses a row.</li>
+              <li><b>WhatsApp button</b>Wired in automatically.</li>
+              <li><b>Safe by default</b>The campaign lands paused. Nothing spends until a person switches it on.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="proj">
+          <summary><h3>Product Demand Signal</h3><span class="tag mono">Paid social · Data</span><p>Flags products selling fast enough to deserve an ad.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Built in the company web app with our dev: the first daily signal and Discord digest are theirs, the per-category thresholds are mine.</p>
+            <ul class="inside">
+              <li><b>Rolling 30-day sales</b>Checked daily for every product on pre-order.</li>
+              <li><b>Thresholds per product line and price band</b>Set at the 90th percentile of a year of pre-order data, instead of one number for everything.</li>
+              <li><b>Margin guard</b>Prizes, plush and merch stay out: one cheap item can't carry its own campaign.</li>
+              <li><b>Daily digest</b>What passed today lands in the ads team's Discord for triage.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="proj">
+          <summary><h3>KOL Scoring Engine</h3><span class="tag mono">Creators</span><p>Creator scoring rebuilt around cost per view and CPM instead of follower count.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Built in the company web app with our dev: the scraper is theirs, the scoring and most iterations are mine.</p>
+            <ul class="inside">
+              <li><b>Cost per view and CPM</b>Per creator, from the product value they claim against the views they bring.</li>
+              <li><b>Leaderboard</b>Interactions per 1K views and views per 1K followers, so big accounts can't hide weak posts.</li>
+              <li><b>Claims tracking</b>Every product a creator takes, valued at retail and at cost.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="proj">
+          <summary><h3>Creator KPI &amp; Scoring</h3><span class="tag mono">Creators · Analytics</span><p>One score, one KPI and one place for the in-house content team.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Built by me in the company web app (Go + TypeScript), replacing a Google Sheet.</p>
+            <ul class="inside">
+              <li><b>One score per post</b>Engagement-weighted across Instagram, Facebook and YouTube, synced daily.</li>
+              <li><b>Leaderboard and detail pages</b>Per store, per creator and per post.</li>
+              <li><b>Submission form</b>Creators submit inside the app, raw-video link included.</li>
+              <li><b>KPI tab</b>Floor and target per creator, hit rate and a content-debt counter.</li>
+              <li><b>Potential tab</b>Top posts per platform as boost candidates, opened in bulk.</li>
+            </ul>
+            <div class="proj-shots">
+              <figure><a href="img/work/creator-kpi-sheet.webp" target="_blank" rel="noopener"><img src="img/work/creator-kpi-sheet.webp" width="1260" height="924" loading="lazy" alt="Creator KPI sheet: per-creator and team KPIs with floor and target, numbers blurred"></a><figcaption>KPI draft: floors from the live baseline, targets from the last healthy quarter.</figcaption></figure>
+              <figure><a href="img/work/account-growth.webp" target="_blank" rel="noopener"><img src="img/work/account-growth.webp" width="1440" height="1060" loading="lazy" alt="Weekly account growth: follows vs unfollows, reach, views and posts per week, numbers blurred"></a><figcaption>Account growth mockup: follows against unfollows, reach and output per creator.</figcaption></figure>
+              <figure><a href="img/work/creator-side-quest.webp" target="_blank" rel="noopener"><img src="img/work/creator-side-quest.webp" width="1368" height="774" loading="lazy" alt="Weekly side quest for content creators: assigned reference, submission steps and review notes, names blurred"></a><figcaption>Next up, designed: a weekly side quest that pushes creators out of their comfort zone.</figcaption></figure>
+            </div>
+          </div>
+        </details>
+
+        <details class="proj">
+          <summary><h3>VTuber Collab Desk</h3><span class="tag mono">Creators</span><p>Proposals, streams, verdicts and budget for VTuber collabs in one place.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Built by me in the company web app (Go + TypeScript), replacing a shared spreadsheet.</p>
+            <ul class="inside">
+              <li><b>Proposals first</b>No deal without an approved proposal built from public channel data.</li>
+              <li><b>Stream log</b>Cost, VOD link and results per collab, with stream details pulled from the YouTube Data API.</li>
+              <li><b>Win or lose verdict</b>Per stream, on watch time and concurrent viewers against the program's own benchmark.</li>
+              <li><b>Budget</b>Monthly trend, payments with invoice and transfer proof, and sign-off for anything over the cap.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="proj">
+          <summary><h3>Social Performance Review</h3><span class="tag mono">Analytics · In build</span><p>A monthly review screen for the brand's Instagram and Facebook.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Spec and clickable mockup by me, now being built into the company web app.</p>
+            <ul class="inside">
+              <li><b>Account level</b>Reach, views, accounts engaged and net followers, month over month.</li>
+              <li><b>Post performance</b>Split by format and source, with boosted posts marked so paid reach doesn't pass for organic.</li>
+              <li><b>Top posts</b>Including product posts next to the sales of the items they featured.</li>
+              <li><b>Series and characters</b>Six months of attention per anime series with the sales rank on top.</li>
+            </ul>
+            <div class="proj-shots">
+              <figure><a href="img/work/sns-monthly-review.webp" target="_blank" rel="noopener"><img src="img/work/sns-monthly-review.webp" width="1440" height="1109" loading="lazy" alt="Monthly social media review: account metrics month over month and post summary cards, numbers blurred"></a><figcaption>Summary tab: account and post metrics month over month.</figcaption></figure>
+              <figure><a href="img/work/sns-ip-trends.webp" target="_blank" rel="noopener"><img src="img/work/sns-ip-trends.webp" width="1440" height="1109" loading="lazy" alt="Anime series trends: social attention per series with sales rank overlaid, numbers blurred"></a><figcaption>Series tab: which series get attention on social but don't sell.</figcaption></figure>
+            </div>
+          </div>
+        </details>
+
+        <details class="proj">
+          <summary><h3>Backlog &amp; Daily Log Bot</h3><span class="tag mono">Discord</span><p>A Discord bot that keeps a manager's tasks and daily log.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Built by me as a standalone Discord bot, Google Sheets as the database.</p>
+            <ul class="inside">
+              <li><b>Log anything</b>By slash command or plain chat, parsed with Gemini.</li>
+              <li><b>Daily report</b>Sent by DM every day.</li>
+              <li><b>Calendar sync</b>Google Calendar sync, with email invites turned into events.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="proj">
+          <summary><h3>Marketing Report Bot</h3><span class="tag mono">Discord</span><p>Monthly social reports from a CSV dropped into Discord.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Built by me as a standalone Discord bot writing to Google Sheets.</p>
+            <ul class="inside">
+              <li><b>CSV to report</b>Drop a Facebook or Instagram export, get a formatted Sheets report with month-over-month rollups.</li>
+              <li><b>Digests</b>Meta Ads and live-stream summaries posted to the team.</li>
+              <li><b>Reminders</b>Pings the team about their schedule.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="proj">
+          <summary><h3>Video Analysis Pipeline</h3><span class="tag mono">Python</span><p>Turns raw short-form videos into AI-ready review packs.</p></summary>
+          <div class="proj-body">
+            <p class="built mono">Built by me in Python with ffmpeg and Whisper.</p>
+            <ul class="inside">
+              <li><b>Frames</b>One frame per second, so pacing and dead air are visible.</li>
+              <li><b>Transcript</b>Whisper transcript plus on-screen text.</li>
+              <li><b>Batch review</b>A whole batch of content packed for one review pass.</li>
+            </ul>
+          </div>
+        </details>
+
       </div>
     </section>
 
