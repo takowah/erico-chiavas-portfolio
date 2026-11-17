@@ -118,3 +118,4 @@ hr { border: 0; border-top: 1px solid var(--line); }
 .big-links a:hover::after { opacity: 1; }
 
 footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 32px; padding-bottom: 40px; color: var(--mute); font-size: 12px; }
+.rows-note { margin: 32px 0 0; }
