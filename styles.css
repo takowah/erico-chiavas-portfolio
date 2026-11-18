@@ -119,3 +119,22 @@ hr { border: 0; border-top: 1px solid var(--line); }
 
 footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 32px; padding-bottom: 40px; color: var(--mute); font-size: 12px; }
 .proj-shots figure.narrow { max-width: 720px; }
+
+/* ---------- group dropdown (wraps the Kyou.id projects) ---------- */
+.group { border-bottom: 1px solid var(--line); }
+.group > summary { display: grid; grid-template-columns: 1fr auto 20px; column-gap: 24px; align-items: center; padding: 26px 0; cursor: pointer; list-style: none; transition: padding-left .2s; }
+.group > summary::-webkit-details-marker { display: none; }
+.group > summary::after { content: "+"; grid-column: 3; justify-self: end; font: 400 24px/1 "JetBrains Mono", monospace; color: var(--mute); transition: transform .2s, color .15s; }
+.group[open] > summary::after { transform: rotate(45deg); color: var(--c2); }
+.group > summary:hover { padding-left: 10px; }
+.group > summary:hover h3 { color: var(--c2); }
+.group > summary:focus-visible { outline: 1px solid var(--c2); outline-offset: 4px; }
+.group > summary h3 { font-size: 24px; font-weight: 500; transition: color .15s; }
+.group .projects { padding: 0 0 8px 24px; border-left: 1px solid var(--line); margin-bottom: 24px; }
+.group .proj:last-child { border-bottom: 0; }
+@media (max-width: 760px) {
+  .group > summary { grid-template-columns: 1fr 20px; }
+  .group > summary .tag { display: none; }
+  .group > summary::after { grid-column: 2; }
+  .group .projects { padding-left: 14px; }
+}
